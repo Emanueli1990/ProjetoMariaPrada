@@ -1,0 +1,74 @@
+.bg{
+    background-image: url("./css/plano5.png");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-attachment: fixed;
+    
+}
+
+.logo{
+    content: url(css/logo.png);
+    width: 100px;
+    border: 2px solid salmon;
+    border-radius: 20px;
+
+}
+.descricao{
+    display: grid;
+    grid-template-areas: "logo titulo";
+    grid-template-columns: 120px auto;
+    
+}
+.descricao span{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Tahoma;
+}
+.button-menu{
+    width: 200px;
+    margin: 5px;
+    border: 2px solid slateblue;
+    border-radius: 20px;
+}
+
+#carrocel_tudo{
+    text-align: center;
+    display: grid;
+    grid-template-areas: '1 2 3';
+    grid-template-columns: 20px 435px 20px;
+    height: 400px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#carrocel{
+    margin-top:17px;
+    margin-left:14px;
+    display: grid;
+    grid-template-areas: '1';
+    grid-template-columns: 435px;
+    text-align: center;
+}
+
+.carrocel_img{
+    margin-top:7px;
+    border: 2px solid sandybrown;
+    border-radius: 29px;
+    width: 400px;
+    height: 400px;
+}
+
+.carrocel_img img
+{
+    width: 400px;
+    height: 400px;    
+    border-radius: 29px;
+}
+
+#setaesquerda{
+    padding-top: 200px;
+}
+
+#setadireita{
+    padding-top: 200px;
+}
