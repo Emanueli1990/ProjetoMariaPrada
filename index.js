@@ -1,5 +1,8 @@
+var logindata;
+
 window.onload = function() {
     execCarrocel();
+    addlogindata();
     setInterval(function(){
         clickleft();
     },3000);
@@ -60,4 +63,36 @@ function clickright()
             }
         }
     } 
+}
+
+function openlogin()
+{
+    document.getElementById('login').style.display = 'block';
+}
+
+function addlogindata()
+{
+    let tjson = '[{"email":"emanueli_rizzo@hotmail.com","senha":"123"},{"email":"luis.akira.i@gmail.com","senha":"123"}]';
+    logindata = JSON.parse(tjson);
+}
+
+function sendlogin()
+{  
+    let flaglogin = false;  
+
+    var json = logindata;
+    json.forEach(element => {
+        if(document.getElementById('lemail').value == element.email)
+        {
+            if(document.getElementById('lpassword').value == element.senha)
+            {
+                flaglogin = true;
+            }
+        }
+    });
+
+    if(flaglogin)
+    {
+        window.location.replace("./servicos.html");
+    }
 }

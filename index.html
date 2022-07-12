@@ -2,15 +2,13 @@
 <html lang "pt-br">
 
 <head>
-        <link rel="stylesheet" href="./layout.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="index.js" defer></script>
+        <script src="index.js" defer></script>      
         <link rel="stylesheet" type="text/css" href="./estilo.css">
-
 </head>
 
 <body class="bg">     
@@ -21,7 +19,7 @@
             <span>Serviços de governança e reparações domesticas de classe e preço justo!</span>
         </div>
     </div>
-        <div class="button-menu">
+        <div class="button-menu" onclick="openlogin()">
             <span>Login</span>
         </div>
         <div class="button-menu">
@@ -29,6 +27,20 @@
         </div>
         <div class="button-menu">
              <span>Serviços</span>
+        </div>
+
+        <div id="login" style="display: none">
+            <div class="login_item">
+                <span>Email</span>
+                <input id="lemail" type="email" />
+            </div>
+            <div class="login_item">
+                <span>Senha</span>
+                <input id="lpassword" type="password" />
+            </div>
+            <div class="login_button">
+                <input id="lbutton" type="button" value="Login" onclick="sendlogin()" />
+            </div>
         </div>
 
         <div id="carrocel_tudo">
